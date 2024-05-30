@@ -21,7 +21,7 @@ const CartItem = ({ item, itemIndex }) => {
         <div className="flex flex-col lg:flex-row lg:items-start justify-between w-full">
           <h1 className="text-lg lg:text-xl font-bold mb-2 lg:mb-0">{item.title}</h1>
         </div>
-        <h2 className="text-gray-700 mb-4">{item.description}</h2>
+        <h2 className="text-gray-700 mb-4">{item.description.split(" ").slice(0, 10).join(" ") + "..."}</h2>
         <div className="flex justify-between">
           <div className="text-xl text-green-600 font-semibold lg:ml-4">${item.price.toFixed(2)}</div>
           <div className='text-red-500 h-10 w-10 bg-pink-200 rounded-full flex justify-center items-center cursor-pointer' onClick={removeFromCart}>

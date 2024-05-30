@@ -32,8 +32,8 @@ export const Cart = () => {
             </div>
           </div>
         ) : (
-          <div className="text-center">
-            <h1 className="text-2xl font-bold mb-4">Cart is empty</h1>
+          <div className="text-center flex flex-col justify-center items-center h-[60vh]">
+            <h1 className="text-2xl font-bold mb-4 ">Cart is empty</h1>
             <Link to="/">
               <button className="bg-green-500 text-white py-2 px-4 rounded hover:bg-green-700 transition">Shop Now</button>
             </Link>
